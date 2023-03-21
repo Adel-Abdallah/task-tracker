@@ -5,7 +5,7 @@
     </header>
 </template>
 
-<script lang="js">
+<script>
 import Button from "./Button.vue"
 export default {
     name:"Header",
@@ -26,6 +26,7 @@ header {
   margin-bottom: 20px;
 }
 
+
 .btn {
   display: inline-block;
   background: #000;
@@ -38,5 +39,15 @@ header {
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-block {
+  display: block;
+  width: 100%;
 }
 </style>
